@@ -1,0 +1,74 @@
+<template>
+  <div id="app">
+    <!-- <img src="./assets/logo.png"> -->
+    <router-view></router-view>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'app'
+}
+</script>
+
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  /*browser will have default style for ul, eg:
+        -webkit-margin-before: 1em;
+        so we need to overwrite it, to avoid the strange space between top of page and body.
+        this is also a form of margin collapsing.
+          */
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: /* url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), */
+  /* url('fonts/icomoon.woff') format('woff'), */
+  url('assets/fonts/IcoMoon-Free.ttf') format('truetype');
+  /* url('fonts/icomoon.svg#icomoon') format('svg'); */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-vimeo:before {
+    content: "\eaa0";
+}   
+.icon-twitter:before {
+    content: "\ea96";
+}
+.icon-soundcloud:before {
+    content: "\eac3";
+}
+</style>
