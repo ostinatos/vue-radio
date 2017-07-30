@@ -13,8 +13,8 @@ Following features are required to be implemented:
 * hover reactions (lots of, you will find those reactions here and there )
 
 The basic tech stack i choose include:  
-Vue.js  
-webpack  
+* Vue.js  
+* webpack  
 
 I will try to use as few third-party libraries (javascript, css, etc.) as possible, because this is a project for practicing the basic and the essential frontend techniques.
 
