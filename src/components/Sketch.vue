@@ -3,22 +3,7 @@
         <div class="header">
             <div class="header-content-wrapper">
                 <main-nav></main-nav>
-                <div class="social-links">
-                    <ul>
-                        <li>
-                            <a href="" class="icon icon-facebook"></a>
-                        </li>
-                        <li>
-                            <a href="" class="icon icon-twitter"></a>
-                        </li>
-                        <li>
-                            <a href="" class="icon icon-vimeo"></a>
-                        </li>
-                        <li>
-                            <a href="" class="icon icon-soundcloud"></a>
-                        </li>
-                    </ul>
-                </div>
+                <nav-social-links/>
                 <div class="search-panel">
     
                 </div>
@@ -36,10 +21,12 @@
 
 <script>
 import MainNav from '@/components/main-nav'
+import NavSocialLinks from '@/components/nav-social-links'
 
 export default {
     components: {
-        'main-nav': MainNav
+        'main-nav': MainNav,
+        'nav-social-links':NavSocialLinks
     }
 }
 
@@ -73,18 +60,5 @@ a {
     -webkit-margin-after: 0em;
 }
 
-/*style for social links  */
 
-.social-links {
-    float: right;
-    width: 20%;
-}
-
-.social-links li {
-    display: inline;
-}
-
-.social-links li a {
-    letter-spacing: .5em;
-}
 </style>

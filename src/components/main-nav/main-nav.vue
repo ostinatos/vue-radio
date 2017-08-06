@@ -1,10 +1,10 @@
 <template>
     <nav class="main-nav">
         <ul>
-            <li v-for="item in navData" :key="item">
+            <li v-for="item in navData" :key="item.label">
                 <a :href="item.link">{{item.label}}</a>
                 <ul class="sub-menu-list" v-if="item.childNavData && item.childNavData.length>0">
-                    <li v-for="child in item.childNavData" :key="child">
+                    <li v-for="child in item.childNavData" :key="child.label">
                         <a :href="child.link">{{child.label}}</a>
                     </li>
                 </ul>
