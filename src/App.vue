@@ -73,4 +73,8 @@ ul {
 .icon-soundcloud:before {
     content: "\eac3";
 }
+
+.icon-search::before {
+  content: "\e986"
+}
 </style>

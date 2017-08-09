@@ -44,8 +44,9 @@ export default {
 
 .social-links {
     float: right;
-    width: 20%;
+    width: 15%;
     color: white;
+    line-height: 50px;
 }
 
 .social-links li {
@@ -66,6 +67,8 @@ export default {
     text-align: center;
     line-height: 32px;
     font-size: 18px;
+    /* companion with transform to get the bump-out feeling  */
+    transition: all 0.2s ease; 
 }
 
 .social-links a,
@@ -77,6 +80,8 @@ export default {
 
 .social-links a:hover {
     color: #c4c4c4;
+    /*companion with transition to get the bump-out feeling  */
+    transform: scale(1.1);
 }
 
 .social-links a:active {

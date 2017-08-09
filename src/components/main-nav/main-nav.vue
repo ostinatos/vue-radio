@@ -60,9 +60,15 @@ export default {
 <style scoped>
 /* style for navigation bar  */
 
-ul {
+ul, li {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
 }
 
 .main-nav {
@@ -107,7 +113,7 @@ ul {
 
 .main-nav li a {
     display: block;
-    line-height: 3em;
+    line-height: 50px;
     box-sizing: border-box;
     float: left;
     font-family: 'Times New Roman', Times, serif;

@@ -3,10 +3,8 @@
         <div class="header">
             <div class="header-content-wrapper">
                 <main-nav></main-nav>
+                <search-panel/>
                 <nav-social-links/>
-                <div class="search-panel">
-    
-                </div>
             </div>
     
         </div>
@@ -22,11 +20,13 @@
 <script>
 import MainNav from '@/components/main-nav'
 import NavSocialLinks from '@/components/nav-social-links'
+import SearchPanel from '@/components/search-panel'
 
 export default {
     components: {
         'main-nav': MainNav,
-        'nav-social-links':NavSocialLinks
+        'nav-social-links':NavSocialLinks,
+        'search-panel':SearchPanel
     }
 }
 
@@ -45,7 +45,7 @@ export default {
 
 
 .header-content-wrapper {
-    width: 960px;
+    width: 1170px;
     /*horizontally centered  */
     margin: 0 auto;
     overflow: auto;
