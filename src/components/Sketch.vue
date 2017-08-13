@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="wrapper" @click="handlePageClicked">
         <div class="header">
             <div class="header-content-wrapper">
                 <main-nav></main-nav>
@@ -21,12 +21,23 @@
 import MainNav from '@/components/main-nav'
 import NavSocialLinks from '@/components/nav-social-links'
 import SearchPanel from '@/components/search-panel'
+import Vue from "vue"
+
+let msgBus = new Vue();
 
 export default {
     components: {
         'main-nav': MainNav,
         'nav-social-links':NavSocialLinks,
         'search-panel':SearchPanel
+    },
+    methods:{
+        handlePageClicked(){
+            msgBus.$emit("app-click", {})
+        }
+    },
+    provide:{
+        msgBus
     }
 }
 
