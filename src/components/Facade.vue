@@ -6,13 +6,15 @@
                 <search-panel/>
                 <nav-social-links/>
             </div>
-    
         </div>
-        <div class="banner">
-    
+        <div class="banner-wrapper">
+            <banner></banner>
+        </div>
+        <div class="main-menu-wrapper">
+            <main-menu></main-menu>
         </div>
         <div class="main-carousel">
-    
+
         </div>
     </div>
 </template>
@@ -21,6 +23,8 @@
 import MainNav from '@/components/main-nav'
 import NavSocialLinks from '@/components/nav-social-links'
 import SearchPanel from '@/components/search-panel'
+import Banner from '@/components/banner'
+import MainMenu from '@/components/main-menu'
 import Vue from "vue"
 
 let msgBus = new Vue();
@@ -28,15 +32,17 @@ let msgBus = new Vue();
 export default {
     components: {
         'main-nav': MainNav,
-        'nav-social-links':NavSocialLinks,
-        'search-panel':SearchPanel
+        'nav-social-links': NavSocialLinks,
+        'search-panel': SearchPanel,
+        'banner': Banner,
+        'main-menu': MainMenu
     },
-    methods:{
-        handlePageClicked(){
+    methods: {
+        handlePageClicked() {
             msgBus.$emit("app-click", {})
         }
     },
-    provide:{
+    provide: {
         msgBus
     }
 }
@@ -71,5 +77,7 @@ a {
     -webkit-margin-after: 0em;
 }
 
-
+.banner-wrapper {
+    padding: 30px 0;
+}
 </style>

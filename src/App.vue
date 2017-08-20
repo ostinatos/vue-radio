@@ -12,6 +12,10 @@ export default {
 </script>
 
 <style>
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   margin: 0;
 }
@@ -26,6 +30,19 @@ ul {
 }
 
 
+/* globally overwrite the default style provided by browser */
+
+ul,
+li {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -63,14 +80,17 @@ ul {
 .icon-facebook:before {
   content: "\ea90";
 }
+
 .icon-vimeo:before {
-    content: "\eaa0";
-}   
-.icon-twitter:before {
-    content: "\ea96";
+  content: "\eaa0";
 }
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
 .icon-soundcloud:before {
-    content: "\eac3";
+  content: "\eac3";
 }
 
 .icon-search::before {

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
-import Sketch from '@/components/Sketch'
+import Facade from '@/components/Facade'
 
 Vue.use(Router)
 
@@ -9,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Sketch',
-      component: Sketch
+      name: 'Facade',
+      component: Facade
     },
     {
       path: '/hello',
